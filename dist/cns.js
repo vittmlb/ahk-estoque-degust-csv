@@ -7,9 +7,9 @@ const destinationFolder = 'C:\\Users\\Vittorio\\Documents\\WorkFolders\\RdMate\\
 program
     .version('0.1.0');
 program
-    .command('sem [filePath]')
-    .action(async (filePath) => {
-    // let filename = path.join(__dirname, 'classes/Contagem-Exportação.csv');
+    .command('sem [fileName]')
+    .action(async (fileName) => {
+    let filePath = path.join(__dirname, 'data', fileName);
     let csv = new class_convert_to_degust_1.ConvertToDegust(filePath);
     csv.parseData();
     csv.writeFile(path.join(destinationFolder, 'contagem_semanal_40.csv'));
