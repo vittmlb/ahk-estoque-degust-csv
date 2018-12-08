@@ -7,12 +7,12 @@ const destinationFolder = 'C:\\Users\\Vittorio\\Documents\\WorkFolders\\RdMate\\
 program
     .version('0.1.0');
 program
-    .command('sem [fileName]')
-    .action(async (fileName) => {
-    let filePath = path.join(__dirname, 'data', fileName);
+    .command('sem <csvFileName> <newFileName>')
+    .action(async (csvFileName, newFileName) => {
+    let filePath = path.join(__dirname, 'data', csvFileName);
     let csv = new class_convert_to_degust_1.ConvertToDegust(filePath);
     csv.parseData();
-    csv.writeFile(path.join(destinationFolder, 'contagem_semanal_40.csv'));
+    csv.writeFile(path.join(destinationFolder, newFileName));
 });
 program.parse(process.argv);
 //# sourceMappingURL=cns.js.map
