@@ -6,6 +6,27 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "console-ultimate": "^2.9.0",
+    "csvsync": "^1.1.0",
+    "express": "^4.16.2",
+    "numeral": "^2.0.6",
+    "request-promise": "^4.2.2",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/chai": "^4.0.6",
+    "@types/commander": "^2.12.2",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.0.53",
+    "@types/typescript": "^2.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "mocha-typescript": "^1.1.12"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
